@@ -1,0 +1,25 @@
+double total=0;
+            int counter=0;
+
+
+            for (; ; )
+            {
+                Console.Write("Enter a number: ");
+
+                double number = Convert.ToInt32(Console.ReadLine());
+                if (number >= 0)
+                {
+                    counter++;
+                    total = total + number;
+                }
+                else if (number < 0)
+                {
+                    break;
+                }
+
+            }
+                
+                    Console.WriteLine("Avarage " + (total / counter) );
+
+                
+             Console.ReadKey();
